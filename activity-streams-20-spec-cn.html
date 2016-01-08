@@ -450,42 +450,30 @@ code.prettyprint {
   <section id="introduction" typeof="bibo:Chapter" resource="#introduction" property="bibo:hasPart">
     <!--OddPage--><h2 id="h-introduction" resource="#h-introduction"><span property="xhv:role" resource="xhv:heading"><span class="secno">1. </span>Introduction</span></h2>
     <p>
-      In the most basic sense, an "Activity" is a semantic description of
-      an action. It is the goal of this specification to provide a JSON-based
-      syntax that is sufficient to express metadata about activities in a rich,
-      human-friendly but machine-processable and extensible manner.  This can
-      include constructing natural-language descriptions or visual
-      representations about the activity, associating actionable information
-      with various types of objects, communicating or recording activity logs,
-      or delegation of potential actions to other applications.
+      在大多数基本场景里,"活动"是对一个动作的语义描述. 
+      本规范的目的是提供一个能够足以表达丰富活动元数据且人性化的、但是同时是机器可处理的、可扩展的基于JSON的语法.  
+      这可以包含关于活动的构建自然语言描述或视觉表现、结合了可操作信息的不同类型对象、传递和记录活动的日志，或对其他应用的潜在动作的委托.
     </p>
 
     <p>
-      The key words "<em class="rfc2119" title="MUST">MUST</em>", "<em class="rfc2119" title="MUST NOT">MUST NOT</em>", "<em class="rfc2119" title="REQUIRED">REQUIRED</em>", "<em class="rfc2119" title="SHALL">SHALL</em>", "<em class="rfc2119" title="SHALL NOT">SHALL NOT</em>",
-      "<em class="rfc2119" title="SHOULD">SHOULD</em>", "<em class="rfc2119" title="SHOULD NOT">SHOULD NOT</em>", "<em class="rfc2119" title="RECOMMENDED">RECOMMENDED</em>", "<em class="rfc2119" title="MAY">MAY</em>", and "<em class="rfc2119" title="OPTIONAL">OPTIONAL</em>" in this
-      document are to be interpreted as described in [<cite><a class="bibref" href="#bib-RFC2119">RFC2119</a></cite>].
+      本文档中的关键词 "<em class="rfc2119" title="MUST">MUST</em>", "<em class="rfc2119" title="MUST NOT">MUST NOT</em>", "<em class="rfc2119" title="REQUIRED">REQUIRED</em>", "<em class="rfc2119" title="SHALL">SHALL</em>", "<em class="rfc2119" title="SHALL NOT">SHALL NOT</em>",
+      "<em class="rfc2119" title="SHOULD">SHOULD</em>", "<em class="rfc2119" title="SHOULD NOT">SHOULD NOT</em>", "<em class="rfc2119" title="RECOMMENDED">RECOMMENDED</em>", "<em class="rfc2119" title="MAY">MAY</em>", 和"<em class="rfc2119" title="OPTIONAL">OPTIONAL</em>" 
+      按照[<cite><a class="bibref" href="#bib-RFC2119">RFC2119</a></cite>]中的描述进行解释.
     </p>
 
     <section id="activitystreams-1.0" class="informative" typeof="bibo:Chapter" resource="#activitystreams-1.0" property="bibo:hasPart">
 
-      <h3 id="h-activitystreams-1.0" resource="#h-activitystreams-1.0"><span property="xhv:role" resource="xhv:heading"><span class="secno">1.1 </span>Relationship to JSON Activity Streams 1.0</span></h3><p><em>This section is non-normative.</em></p>
+      <h3 id="h-activitystreams-1.0" resource="#h-activitystreams-1.0"><span property="xhv:role" resource="xhv:heading"><span class="secno">1.1 </span>Relationship to JSON Activity Streams 1.0</span></h3><p><em>本章节非规范.</em></p>
 
       <p>
-        The JSON Activity Streams 1.0 [<cite><a class="bibref" href="#bib-AS1">AS1</a></cite>] specification was
-        published in May of 2011 and provided a baseline extensible syntax
-        for the expression of completed activities.  This specification
-        builds upon that initial foundation by incorporating lessons learned
-        through extensive implementation, community feedback and related
-        ongoing work from a variety of other communities.
+        JSON活动流1.0 [<cite><a class="bibref" href="#bib-AS1">AS1</a></cite>]规范发布于2011年5月，提供了一个基线可扩展的语法来描述已完成的活动.  
+        本规范通过合并广泛实施中获得的经验教训、社区反馈和许多其它社区相关的工作等方式，建立于该最初基础之上.
       </p>
 
       <p>
-        The terms <code>displayName</code>, <code>verb</code>,
-        <code>title</code> and <code>objectType</code> should be treated as
-        reserved terms that <em class="rfc2119" title="SHOULD NOT">SHOULD NOT</em> be used within Activity Streams 2.0
-        documents. When encountered in an Activity Streams 2.0 document, they
-        <em class="rfc2119" title="SHOULD">SHOULD</em> be processed in accordance to the guidelines listed in
-        <a href="#activitystreams-1.0a" class="sec-ref"><span class="secno">B.</span> <span class="sec-title">Deprecated Activity Streams 1.0 Syntax</span></a>
+        <code>displayName</code>, <code>verb</code>,
+        <code>title</code> and <code>objectType</code>应当被视为保留术语，不得<em class="rfc2119" title="SHOULD NOT">SHOULD NOT</em>
+        在活动流2.0文档中使用. 当遇到一份活动流2.0文档, 它应当<em class="rfc2119" title="SHOULD">SHOULD</em>按照<a href="#activitystreams-1.0a" class="sec-ref"><span class="secno">B.</span> <span class="sec-title">Deprecated Activity Streams 1.0 Syntax</span></a>中列出的指导进行处理
       </p>
 
     </section>
