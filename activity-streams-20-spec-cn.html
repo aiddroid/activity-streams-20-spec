@@ -1123,46 +1123,38 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
   </section>
 
   <section id="model" typeof="bibo:Chapter" resource="#model" property="bibo:hasPart">
-    <!--OddPage--><h2 id="h-model" resource="#h-model"><span property="xhv:role" resource="xhv:heading"><span class="secno">4. </span>Model</span></h2>
+    <!--OddPage--><h2 id="h-model" resource="#h-model"><span property="xhv:role" resource="xhv:heading"><span class="secno">4. </span>模型</span></h2>
 
     <p>
-      The <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>
-      normatively defines the core object types and properties for Activity
-      Streams 2.0.
+      <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>
+      规范的定义了活动流2.0中的核心对象类型和属性.
     </p>
     
     <p>
-      The object types defined by the vocabulary are segmented into a set of
-      eight core types and an extended set of Activity and Object types common
-      to many social Web applications. The core classes include:
+      词汇表定义的对象类型被分成了一个拥有8种核心类型的集合和一个常见于许多社交网络应用的活动和对象的扩展集合. 核心级别包含:
       </p><ul>
-        <li><a href="#asobject" class="internalDFN" data-link-type="dfn">Object</a>,</li>
-        <li><a href="#dfn-link" class="internalDFN" data-link-type="dfn">Link</a>,</li>
-        <li><a href="#actor" class="internalDFN" data-link-type="dfn">Actor</a>,</li>
-        <li><a href="#activity" class="internalDFN" data-link-type="dfn">Activity</a>,</li>
-        <li><a href="#collection" class="internalDFN" data-link-type="dfn">Collection</a>,</li>
-        <li><a href="#dfn-orderedcollection" class="internalDFN" data-link-type="dfn"><code>OrderedCollection</code></a>,</li>
-        <li><a href="#dfn-collectionpage" class="internalDFN" data-link-type="dfn"><code>CollectionPage</code></a>, and</li>
-        <li><a href="#dfn-orderedcollectionpage" class="internalDFN" data-link-type="dfn"><code>OrderedCollectionPage</code></a>.</li>
+        <li><a href="#asobject" class="internalDFN" data-link-type="dfn">对象</a>,</li>
+        <li><a href="#dfn-link" class="internalDFN" data-link-type="dfn">链接</a>,</li>
+        <li><a href="#actor" class="internalDFN" data-link-type="dfn">主体</a>,</li>
+        <li><a href="#activity" class="internalDFN" data-link-type="dfn">活动</a>,</li>
+        <li><a href="#collection" class="internalDFN" data-link-type="dfn">集合</a>,</li>
+        <li><a href="#dfn-orderedcollection" class="internalDFN" data-link-type="dfn"><code>有序集合</code></a>,</li>
+        <li><a href="#dfn-collectionpage" class="internalDFN" data-link-type="dfn"><code>集合页面</code></a>, and</li>
+        <li><a href="#dfn-orderedcollectionpage" class="internalDFN" data-link-type="dfn"><code>有序集合页面</code></a>.</li>
       </ul>
     <p></p>
     
     <p>
-      Every JSON object in an Activity Streams 2.0 document is either an
-      <code><a href="#asobject" class="internalDFN" data-link-type="dfn">Object</a></code> or a <code><a href="#dfn-link" class="internalDFN" data-link-type="dfn">Link</a></code>. All other types
-      defined in the Activity Vocabulary, as well as all extension types, are
-      derived from these two base types.
+      活动流2.0中的每个JSON对象同时也是一个
+      <code><a href="#asobject" class="internalDFN" data-link-type="dfn">对象</a></code> 或者 <code><a href="#dfn-link" class="internalDFN" data-link-type="dfn">链接</a></code>. 活动词汇表中定义的所有其它类型, 包括扩展类型, 都派生于这两个基本类型.
     </p>
     
     <p>
-      A JSON object in the Activity Streams 2.0 document is a
-      <code><a href="#dfn-link" class="internalDFN" data-link-type="dfn">Link</a></code> if either: (a) the object contains a
-      <code>type</code> property whose value includes "<code>Link</code>" or
-      (b) any of the types included in the value of the <code>type</code>
-      property are defined as extensions of <a href="#dfn-link" class="internalDFN" data-link-type="dfn">Link</a> (see
-      <a href="../activitystreams-vocabulary/#dfn-mention">Mention</a> for
-      instance); otherwise the JSON object is considered an instance
-      or extension of <code><a href="#asobject" class="internalDFN" data-link-type="dfn">Object</a></code>.
+      活动流2.0文档中的JSON对象是一个
+      <code><a href="#dfn-link" class="internalDFN" data-link-type="dfn">链接</a></code> 如果同时满足: (a) 对象包含一个
+      值是 "<code>Link</code>" 的 <code>type</code> 属性 或者
+      (b) 任何包含于 <code>type</code> 属性的值的类型被定义为了 <a href="#dfn-link" class="internalDFN" data-link-type="dfn">链接</a> 的扩展 (例如
+      <a href="../activitystreams-vocabulary/#dfn-mention">Mention</a>); 否则JSON对象被视为 <code><a href="#asobject" class="internalDFN" data-link-type="dfn">对象</a></code> 的g一个实例.
     </p>
 
     <section id="object" typeof="bibo:Chapter" resource="#object" property="bibo:hasPart">
