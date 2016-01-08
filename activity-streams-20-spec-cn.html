@@ -482,7 +482,7 @@ code.prettyprint {
       <!--OddPage--><h2 id="h-syntaxconventions" resource="#h-syntaxconventions"><span property="xhv:role" resource="xhv:heading"><span class="secno">2. </span>序列化</span></h2>
 
       <p>
-        本规范为<a href="../activitystreams-vocabulary/">Activity Vocabulary</a>描述了一个基于JSON [<cite><a class="bibref" href="#bib-RFC7159">RFC7159</a></cite>]的序列化语法，
+        本规范为<a href="../activitystreams-vocabulary/">活动词汇表</a>描述了一个基于JSON [<cite><a class="bibref" href="#bib-RFC7159">RFC7159</a></cite>]的序列化语法，
         它符合[<cite><a class="bibref" href="#bib-JSON-LD">JSON-LD</a></cite>]的子集语法约束但是不需要JSON-LD处理. 尽管其它的序列化形式也是可行的，但这些可选项不在本文档的讨论之列.
       </p>
 
@@ -1126,7 +1126,7 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
     <!--OddPage--><h2 id="h-model" resource="#h-model"><span property="xhv:role" resource="xhv:heading"><span class="secno">4. </span>模型</span></h2>
 
     <p>
-      <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>
+      <a href="../activitystreams-vocabulary/">活动词汇表</a>
       规范的定义了活动流2.0中的核心对象类型和属性.
     </p>
     
@@ -1139,7 +1139,7 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
         <li><a href="#activity" class="internalDFN" data-link-type="dfn">活动</a>,</li>
         <li><a href="#collection" class="internalDFN" data-link-type="dfn">集合</a>,</li>
         <li><a href="#dfn-orderedcollection" class="internalDFN" data-link-type="dfn"><code>有序集合</code></a>,</li>
-        <li><a href="#dfn-collectionpage" class="internalDFN" data-link-type="dfn"><code>集合页面</code></a>, and</li>
+        <li><a href="#dfn-collectionpage" class="internalDFN" data-link-type="dfn"><code>集合页面</code></a>, 和</li>
         <li><a href="#dfn-orderedcollectionpage" class="internalDFN" data-link-type="dfn"><code>有序集合页面</code></a>.</li>
       </ul>
     <p></p>
@@ -1171,7 +1171,7 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
         "object type" (expressed using the <code>type</code>
         property), all instances of the <code>Object</code> class share a
         common set of properties normatively defined by the
-        <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>.
+        <a href="../activitystreams-vocabulary/">活动词汇表</a>.
         These include:
         <code>
           <code><a href="../activitystreams-vocabulary/#dfn-attachment">attachment</a></code> |
@@ -1290,17 +1290,17 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
 </figure>
 
      <p>
-       The <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>
+       The <a href="../activitystreams-vocabulary/">活动词汇表</a>
        defines a range of <code>Object</code> types that are common to
        many social Web applications. This specification stops short of
        defining semantically specific properties for most of these objects.
        External vocabularies can be used to express additional detail not
-       covered by the Activity Vocabulary.
+       covered by the 活动词汇表.
      </p>
 
      <p>
       Furthermore, while implementations are free to introduce new types of
-      Objects beyond those defined by the Activity Vocabulary, interoperability
+      Objects beyond those defined by the 活动词汇表, interoperability
       issues can arise when applications rely too much on extension types that
       are not recognized by other implementations. Care should be taken to not
       unduly overlap with or duplicate the existing Object types. For instance,
@@ -1384,9 +1384,9 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
 
      <p>
        Certain properties defined by some External Vocabularies can overlap or
-       duplicate those defined by the Activity Vocabulary. Where such overlap
+       duplicate those defined by the 活动词汇表. Where such overlap
        exists, for the sake of consistent interoperability, implementations
-       <em class="rfc2119" title="MUST">MUST</em> favor the use of properties defined by the Activity Vocabulary.
+       <em class="rfc2119" title="MUST">MUST</em> favor the use of properties defined by the 活动词汇表.
      </p>
 
    </section>
@@ -1410,7 +1410,7 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
         <code><a href="../activitystreams-vocabulary/#dfn-href">href</a></code>
         property. In addition, all <code>Link</code> instances share the
         following common set of optional properties as normatively defined by
-        the <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>:
+        the <a href="../activitystreams-vocabulary/">活动词汇表</a>:
           <code><a href="../activitystreams-vocabulary/#dfn-name">name</a></code> |
           <code><a href="../activitystreams-vocabulary/#dfn-hreflang">hreflang</a></code> |
           <code><a href="../activitystreams-vocabulary/#dfn-mediatype">mediaType</a></code> |
@@ -1766,7 +1766,7 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
         properties for each. All Actor objects are specializations of
         <code><a href="#asobject" class="internalDFN" data-link-type="dfn">Object</a></code> and inherit all of the core properties
         common to all Objects. External vocabularies can be used to express
-        additional detail not covered by the Activity Vocabulary. VCard
+        additional detail not covered by the 活动词汇表. VCard
         [<cite><a class="bibref" href="#bib-vcard-rdf">vcard-rdf</a></cite>] <em class="rfc2119" title="SHOULD">SHOULD</em> be used to provide additional metadata for
         <a href="../activitystreams-vocabulary/#dfn-person">Person</a>,
         <a href="../activitystreams-vocabulary/#dfn-group">Group</a>,
@@ -1862,7 +1862,7 @@ _</span><span class="pun">:</span><span class="pln">c14n0 a </span><span class="
 
       <p>
         While implementations are free to introduce new types of Actors beyond
-        those defined by the Activity Vocabulary, interoperability issues can
+        those defined by the 活动词汇表, interoperability issues can
         arise when applications rely too much on extension types that are not
         recognized by other implementations. Care should be taken to not unduly
         overlap with or duplicate the existing Actor types. For instance, some
@@ -1966,17 +1966,17 @@ _</span><span class="pun">:</span><span class="pln">c14n0 a </span><span class="
 </figure>
 
       <p>
-        The <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>
+        The <a href="../activitystreams-vocabulary/">活动词汇表</a>
         defines a small number of <code>Activity</code> types that are common
         to many social Web applications. This specification stops short of
         defining semantically specific properties for most of these activities.
         External vocabularies can be used to express additional detail not
-        covered by the Activity Vocabulary.
+        covered by the 活动词汇表.
       </p>
 
       <p>
         Furthermore, while implementations are free to introduce new types of
-        Activites beyond those defined by the Activity Vocabulary,
+        Activites beyond those defined by the 活动词汇表,
         interoperability issues can arise when applications rely too much on
         extension types that are not recognized by other implementations. Care
         should be taken to not unduly overlap with or duplicate the existing
@@ -2629,7 +2629,7 @@ _</span><span class="pun">:</span><span class="pln">b0 a </span><span class="kwd
       </p>
 
       <p>
-        The <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>
+        The <a href="../activitystreams-vocabulary/">活动词汇表</a>
         defines three properties that use natural language values:
         <code><a href="../activitystreams-vocabulary/#dfn-name">name</a></code>,
         <code><a href="../activitystreams-vocabulary/#dfn-summary">summary</a></code>, and
@@ -2759,7 +2759,7 @@ _:b0 a as:Object ;
       <p>
         In Activity Streams 2.0, an "extension" is any property, activity,
         actor or object type not defined by the
-        <a href="../activitystreams-vocabulary/">Activity Vocabulary</a>.
+        <a href="../activitystreams-vocabulary/">活动词汇表</a>.
         Consuming implementations that encounter unfamiliar
         extensions <em class="rfc2119" title="MUST NOT">MUST NOT</em> stop processing or signal an error and <em class="rfc2119" title="MUST">MUST</em>
         continue processing the items as if those properties were not
@@ -3414,7 +3414,7 @@ profile-URI   = URI</pre>
     <p>
         It is possible use multiple vocabularies to cover particular
         characteristics of the activities like data provenance and annotations,
-        which can compliment the Activity Vocabulary. For example: Eric writes a
+        which can compliment the 活动词汇表. For example: Eric writes a
         short note to be shared with his followers. After posting the note, he
         notices a spelling error. He edits the note and re-posts it. Later, Eric
         decides that the information in the note is incorrect. He deletes the
